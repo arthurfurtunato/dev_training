@@ -38,7 +38,7 @@ export class CoursesService {
     );
 
     if (indexCourse >= 0) {
-      return this.courses.splice(+id, 1);
+      return this.courses.splice(+id - 1, 1);
     }
 
     return `Não foi encontrado um curso com esse index`;
